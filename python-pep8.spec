@@ -74,6 +74,9 @@ popd
 %{_bindir}/pep8
 #{python_sitelib}/*/*
 #{python_sitelib}/pep8.py
+%{python_sitelib}/__pycache__/pep8.cpython-*.*
+%{python_sitelib}/pep8-%{version}-py*.*.egg-info/PKG-INFO
+%{python_sitelib}/pep8-%{version}-py*.*.egg-info/
 
 
 %if %{with_python2}
