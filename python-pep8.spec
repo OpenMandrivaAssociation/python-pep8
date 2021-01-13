@@ -5,7 +5,7 @@
 
 Name:           python-%{pypi_name}
 Version:        %{version}
-Release:        2
+Release:        3
 Group:          Development/Python
 Summary:        pep8 is a tool to check your Python code against some of the style conventions in PEP 8.
 
@@ -72,8 +72,8 @@ popd
 %files
 %doc  CONTRIBUTING.rst README.rst CHANGES.txt
 %{_bindir}/pep8
-%{python_sitelib}/*/*
-%{python_sitelib}/pep8.py
+#{python_sitelib}/*/*
+#{python_sitelib}/pep8.py
 
 
 %if %{with_python2}
